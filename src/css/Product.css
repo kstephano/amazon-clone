@@ -1,0 +1,91 @@
+@import './constants.css';
+
+.product {
+    width: fit-content;
+    align-items: center;
+    padding: 15px;
+    z-index: 1;
+    background-color: white;
+}
+
+.product__img {
+    width: 100%;
+    max-width: 270px;
+    max-height: 140px;
+    margin-bottom: 5px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.product__title {
+
+}
+
+.product__info-container {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product__ratings-container {
+
+}
+
+.product__ratings-stars-45 {
+    height: 16px;
+    width: 80px;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/02/da/creatives/aui-mini-sprite-2015-02.png);
+    background-position: -170px 0px;
+}
+
+.product__ratings-count {
+    margin-left: 5px;
+    color: var(--clr-neutral-600);
+    font-size: 12px;
+    align-self: center;
+}
+
+.product__price-container {
+
+}
+
+.product__price {
+
+}
+
+.product__price-prime-logo {
+    margin-top: 1px;
+    height: 14px;
+    padding: 0px 0px 0px 5px;
+}
+
+.product__shop-now-btn {
+    background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
+    height: 20px;
+    width: 170px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    padding: 4px 10px 0px 11px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 149, 44) rgb(166, 130, 38) rgb(155, 121, 36);
+    text-decoration: none;
+    overflow: hidden;
+    color: currentColor;
+    box-shadow: rgb(255 255 255 / 60%) 0px 1px 0px inset;
+}
+
+.product__shop-now-btn:hover {
+    opacity: 0.8;
+}
