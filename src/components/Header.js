@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
+import ListIcon from '@material-ui/icons/List';
 
 import '../css/Header.css'
 import logo from '../Assets/amazon-logo-transparent.png'
@@ -8,29 +9,81 @@ import logo from '../Assets/amazon-logo-transparent.png'
 function Header() {
     return (
         <div className='header'>
-            <img className='header__logo'
-                src={logo} 
-                alt='Amazon Logo'
-            />
-            <div className='header__search'>
-                <input className='header__search-input' type='text'/>
-                <SearchIcon className='header__search-icon' />
+            <div className="navbar-main">
+                <img className='navbar-main__logo'
+                    src={logo} 
+                    alt='Amazon Logo'
+                />
+                <div className='navbar-main__search'>
+                    <input className='navbar-main__search-input' type='text'/>
+                    <SearchIcon className='navbar-main__search-icon' />
+                </div>
+                <div className='navbar-main__nav'>
+                    <div className='navbar-main__option'>
+                        <span className='navbar-main__option-line-one'>Hello Guest</span>
+                        <span className='navbar-main__option-line-two'>Sign In</span>
+                    </div>
+
+                    <div className='navbar-main__option'>
+                        <span className='navbar-main__option-line-one'>Returns</span>
+                        <span className='navbar-main__option-line-two'>& Orders</span>
+                    </div>
+
+                    <div className='navbar-main__option-basket'>
+                        <ShoppingBasketIcon />
+                        <span className='navbar-main__option-line-two navbar-main__basket-count'>0</span>
+                    </div>
+                </div>
             </div>
-            <div className='header__nav'>
-                <div className='header__option'>
-                    <span className='header__option-line-one'>Hello Guest</span>
-                    <span className='header__option-line-two'>Sign In</span>
+            
+            <div className="navbar-shop">
+                <div className="navbar-shop__left">
+                    <div className="navbar-shop__option navbar-shop__option-one">
+                        <ListIcon className="navbar-shop__list-icon" />
+                        <span className="navbar-shop__option-text navbar-shop__option-one-text">All</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Grocery</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Prime</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Prime Video</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Browsing History</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Free Delivery</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Buy Again</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                    <   span className="navbar-shop__option-text">Gift Cards & Top Up</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Sports & Outdoors</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Beauty</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Pet Supplies</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Shopper Toolkit</span>
+                    </div>
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text">Vouchers</span>
+                    </div>
                 </div>
-
-                <div className='header__option'>
-                    <span className='header__option-line-one'>Returns</span>
-                    <span className='header__option-line-two'>& Orders</span>
-                </div>
-
-                <div className='header__option-basket'>
-                    <ShoppingBasketIcon />
-                    <span className='header__option-line-two header__basket-count'>0</span>
-                </div>
+               <div className="navbar-shop__right">
+                    <div className="navbar-shop__option">
+                        <span className="navbar-shop__option-text"></span>
+                    </div>
+               </div>
             </div>
         </div>
     )

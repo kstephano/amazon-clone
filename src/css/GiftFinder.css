@@ -1,0 +1,37 @@
+@import './constants.css';
+
+.gift-finder__container {
+    position: relative;
+    background-color: white;
+    height: 150px;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+.gift-finder__header {
+    position: relative;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gift-finder__body {
+    position: relative;
+    padding: 0 20px 56px 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    line-height: 19px;
+    font-size: 13px;
+}
+
+.gift-finder__footer {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 19px;
+    font-size: 13px;
+}

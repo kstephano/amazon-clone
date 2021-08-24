@@ -1,7 +1,6 @@
 @import './constants.css';
 
 .product {
-    width: fit-content;
     align-items: center;
     padding: 15px;
     z-index: 1;
@@ -70,6 +69,7 @@
 
 .product__shop-now-btn {
     background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
+    align-self: flex-end;
     height: 20px;
     width: 170px;
     cursor: pointer;
