@@ -20,6 +20,15 @@
 
 }
 
+.top-links__header-text-container > h1 {
+    padding-bottom: 5px;
+}
+
+.top-links__subtitle {
+    padding: 7px 0px;
+    font-weight: 700;
+}
+
 .top-links__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -38,7 +47,6 @@
 }
 
 .top-links__grid-item-image {
-    border: 1px solid orange;
     mix-blend-mode: multiply;
 }
 
@@ -48,5 +56,4 @@
 
 .top-links__grid-item-label {
     padding-bottom: 10px;
-    border: 1px solid orange;
 }

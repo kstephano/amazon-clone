@@ -17,7 +17,7 @@ function TopLinks() {
                     <p>Customer since 2010</p>
                 </div>
             </div>    
-            <h2>Top links for you</h2>
+            <p className="top-links__subtitle">Top links for you</p>
             <div className="top-links__grid">
                 <div className="top-links__grid-item">
                     <div className="top-links__grid-item-image-container">
