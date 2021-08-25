@@ -1,4 +1,8 @@
+@import './constants.css';
+
 .home {
+    position: relative;
+    background-color: var(--clr-neutral-300);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,13 +10,12 @@
 }
 
 .home__image-container {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 0;
     align-items: center;
     height: 600px;
     width: 100%;
     overflow: hidden;
-    margin-bottom: -352px;
 }
 
 .home__image {
@@ -26,13 +29,14 @@
 
 .home__container {
     width: 100%;
-    max-width: 1460px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
 .home__grid {
+    margin: 250px 15px 0px 15px;
     display: grid;
     z-index: 10;
     grid-template-columns:  repeat(4, 1fr);
@@ -40,3 +44,12 @@
     justify-items: stretch;
 }
 
+.home__grid-item {
+
+}
+
+.home__grid-item-two,
+.home__grid-item-three,
+.home__grid-item-five {
+    min-width: 250px;
+}

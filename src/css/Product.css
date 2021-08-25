@@ -1,42 +1,64 @@
 @import './constants.css';
 
 .product {
-    align-items: center;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
     z-index: 1;
     background-color: white;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.product__image-container {
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .product__img {
-    width: 100%;
     max-width: 270px;
     max-height: 140px;
-    margin-bottom: 5px;
 }
 
 .flex-container-column {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
 }
 
 .flex-container-row {
     display: flex;
     flex-direction: row;
     margin-top: 5px;
-}
-
-.product__title {
-
-}
-
-.product__info-container {
-    width: 100%;
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.product__ratings-container {
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
 
+.product__title-container {
+    min-width: 0;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.product__title-container > span {
+    color: red;
+}
+
+.product__info-container {
+    display: flex;
+    min-width: 0;
+}
+
+.product__details-container {
+    width: auto;
 }
 
 .product__ratings-stars-45 {
@@ -53,14 +75,6 @@
     align-self: center;
 }
 
-.product__price-container {
-
-}
-
-.product__price {
-
-}
-
 .product__price-prime-logo {
     margin-top: 1px;
     height: 14px;
@@ -70,12 +84,12 @@
 .product__shop-now-btn {
     background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
     align-self: flex-end;
+    min-width: 90px;
     height: 20px;
-    width: 170px;
     cursor: pointer;
     text-align: center;
     font-size: 13px;
-    padding: 4px 10px 0px 11px;
+    padding: 4px 0px 0px 0px;
     border-radius: 3px;
     border-width: 1px;
     border-style: solid;

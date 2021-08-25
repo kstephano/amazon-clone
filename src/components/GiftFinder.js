@@ -4,7 +4,7 @@ import '../css/GiftFinder.css'
 
 function GiftFinder() {
     return (
-        <div className='gift-finder__container'>
+        <div className='gift-finder__container grid-card-layout'>
             <div className="gift-finder__header">
                 <h1>Looking for a gift?</h1>
             </div>

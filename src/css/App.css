@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
     font-family: 'Amazon Ember',arial,sans-serif;
     font-size: 14px;
@@ -19,4 +28,9 @@ a {
 
 a:hover {
     color: var(--clr-link-hover);
+}
+
+.grid-card-layout {
+    font-size: 13px;
+    line-height: 19px;
 }

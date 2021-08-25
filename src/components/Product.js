@@ -4,16 +4,20 @@ import '../css/Product.css'
 
 function Product() {
     return (
-        <div className="product flex-container-column">
-            <img 
-                className="product__img"
-                src="https://m.media-amazon.com/images/I/61sSAuEPVPL._AC_SL1000_.jpg" 
-                alt="Product" 
-            />
+        <div className="product">
+            <div className="product__image-container">
+                <img 
+                    className="product__img"
+                    src="https://m.media-amazon.com/images/I/61sSAuEPVPL._AC_SL1000_.jpg" 
+                    alt="Product" 
+                />
+            </div>
+            <div className="product__title-container ellipsis">
+                <span>JVC Fire TV 40" Smart Full HD LEDaaAAAaa</span>
+            </div>
             <div className="flex-container-column">
-                <span className="product__title">JVC Fire TV 40" Smart Full HD LED TV</span>
                 <div className="flex-container-row">
-                    <div className="product__info-container flex-container-column">
+                    <div className="product__details-container flex-container-column">
                         <div className="product__ratings-container flex-container-row">
                             <div className="product__ratings-stars-45"></div>
                             <span className="product__ratings-count">1903</span>
