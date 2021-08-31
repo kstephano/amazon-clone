@@ -48,8 +48,11 @@
 
 }
 
-.home__grid-item-two,
 .home__grid-item-three,
 .home__grid-item-five {
     min-width: 260px;
+}
+
+.home__grid-item-two {
+    min-width: 280px;
 }

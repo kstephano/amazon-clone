@@ -1,0 +1,28 @@
+.summersale__container {
+    background-color: white;
+    padding: 20px;
+}
+
+.summersale__header {
+    padding-bottom: 15px;
+}
+
+.summersale__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.summersale__grid-item {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.summersale__grid-item-img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: none;
+}

@@ -1,5 +1,9 @@
 @import './constants.css';
 
+span {
+    display: inline-block;
+}
+
 .product {
     display: flex;
     flex-direction: column;
@@ -58,8 +62,7 @@
 .product__ratings-stars-45 {
     height: 16px;
     width: 80px;
-    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/02/da/creatives/aui-mini-sprite-2015-02.png);
-    background-position: -170px 0px;
+    background-image: url(https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png);
 }
 
 .product__ratings-count {
