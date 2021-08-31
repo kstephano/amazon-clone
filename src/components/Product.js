@@ -1,4 +1,5 @@
 import React from 'react'
+import InfoIcon from '@material-ui/icons/Info';
 
 import '../css/Product.css'
 
@@ -60,6 +61,10 @@ function Product({ title, image, price, rating, ratingCount }) {
                     </div>
                 <span className="product__shop-now-btn">Shop now</span>
                 </div>
+            </div>
+            <div className="product__info-container">
+                <span>Sponsored</span>
+                <InfoIcon className="product__info-logo" />
             </div>
         </div>
     )

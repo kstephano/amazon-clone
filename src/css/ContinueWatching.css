@@ -1,6 +1,38 @@
 .continue-watching {
+    position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
     background-color: white;
     padding: 20px;
+}
+
+.continue-watching__header {
+    padding-bottom: 40px;
+}
+
+.continue-watching__image-container {
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.continue-watching__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.continue-watching__play-icon {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.continue-watching__footer {
+    position: absolute;
+    bottom: 20px;
 }

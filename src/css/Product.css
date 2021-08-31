@@ -1,16 +1,12 @@
 @import './constants.css';
 
-span {
-    display: inline-block;
-}
-
 .product {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 15px 10px;
     z-index: 1;
     background-color: white;
-    overflow: hidden;
     min-width: 0px;
 }
 
@@ -100,4 +96,25 @@ span {
 
 .product__shop-now-btn:hover {
     opacity: 0.8;
+}
+
+.product__info-container {
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    bottom: -20px;
+}
+
+.product__info-container > span {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font: 11px 'Amazon Ember Regular', 'Amazon Ember', 'Arial' !important;
+}
+
+.product__info-logo {
+    vertical-align: top;
+    height: 16px !important;
+    margin: 1px 0px;
+    margin-left: -4px;
+    color: rgb(85, 85, 85);
 }

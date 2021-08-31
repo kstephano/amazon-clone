@@ -3,8 +3,7 @@
 .gift-finder__container {
     position: relative;
     background-color: white;
-    height: 150px;
-    min-width: 230px;
+    height: 100%;
     overflow: hidden;
 }
 

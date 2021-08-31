@@ -34,19 +34,18 @@ function Home() {
                     </div>
                     <div className="home__grid-item home__grid-item-four">
                         <GiftFinder />
-                        <Advert />
                     </div>
                     <div className="home__grid-item home__grid-item-five">
+                        <Advert />
+                    </div>
+                    <div className="home__grid-item home__grid-item-six">
                         <Product 
-                            title='JVC Fire TV 40" Smart Full HD LED'
+                            title='JVC Fire TV 40" Smart Full HD LEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
                             price={180.99}
                             rating={4.5}
                             image="https://m.media-amazon.com/images/I/61sSAuEPVPL._AC_SL1000_.jpg" 
                             productCount={1903}
                         />
-                    </div>
-                    <div className="home__grid-item home__grid-item-six">
-                        <Advert />
                     </div>
                     <div className="home__grid-item home__grid-item-seven">
                         <Advert />

@@ -12,11 +12,11 @@ function Advert() {
                     alt="Advert" 
                     className="advert__image" 
                 />
+                <div className="advert__info-container">
+                    <span>Sponsored</span>
+                    <InfoIcon className="advert__info-logo" />
+                </div>
             </div>  
-            <div className="advert__info-container">
-                <span>Sponsored</span>
-                <InfoIcon className="advert__info-logo" />
-            </div>
         </div>
     )
 }
