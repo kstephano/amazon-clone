@@ -4,6 +4,7 @@ import '../css/Home.css'
 import TopLinks from './TopLinks'
 import Product from './Product'
 import GiftFinder from './GiftFinder'
+import SummerSale from './SummerSale'
 
 function Home() {
     return (
@@ -21,10 +22,16 @@ function Home() {
                         <TopLinks />
                     </div>
                     <div className="home__grid-item home__grid-item-two">
-                        <Product />
+                        <SummerSale />
                     </div>
                     <div className="home__grid-item home__grid-item-three">
-                        <Product />
+                        <Product 
+                            title='JVC Fire TV 40" Smart Full HD LED'
+                            price={180.99}
+                            rating={4.5}
+                            image="https://m.media-amazon.com/images/I/61sSAuEPVPL._AC_SL1000_.jpg" 
+                            productCount={1903}
+                        />
                     </div>
                     <div className="home__grid-item home__grid-item-four">
                         <GiftFinder />
