@@ -1,0 +1,33 @@
+.advert {
+    margin-top: 20px;
+}
+
+.advert__image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advert__image {
+    width: 300px;
+    height: auto;
+}
+
+.advert__info-container {
+    float: right;
+    cursor: pointer;
+}
+
+.advert__info-container > span {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font: 11px 'Amazon Ember Regular', 'Amazon Ember', 'Arial' !important;
+}
+
+.advert__info-logo {
+    vertical-align: top;
+    height: 16px !important;
+    margin: 1px 0px;
+    margin-left: -4px;
+    color: rgb(85, 85, 85);
+}
