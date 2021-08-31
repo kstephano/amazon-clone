@@ -1,6 +1,12 @@
 .summersale__container {
     background-color: white;
     padding: 20px;
+    height: 100%;
+}
+
+.summersale__container > a {
+    display: inline-block;
+    padding-top: 20px;
 }
 
 .summersale__header {

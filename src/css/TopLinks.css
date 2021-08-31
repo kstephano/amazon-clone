@@ -3,6 +3,7 @@
 .top-links__container {
     background-color: white;
     display: flex;
+    height: 100%;
     flex-direction: column;
     padding: 20px;
     padding-bottom: 40px;
