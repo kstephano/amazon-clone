@@ -45,6 +45,11 @@
 }
 
 .home__grid-item {
+    background-color: red;
+}
+.home__grid-item-one,
+.home__grid-item-two,
+.home__grid-item-three {
 
 }
 

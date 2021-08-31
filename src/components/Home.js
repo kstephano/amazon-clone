@@ -5,6 +5,7 @@ import TopLinks from './TopLinks'
 import Product from './Product'
 import GiftFinder from './GiftFinder'
 import SummerSale from './SummerSale'
+import Advert from './Advert'
 
 function Home() {
     return (
@@ -35,9 +36,19 @@ function Home() {
                     </div>
                     <div className="home__grid-item home__grid-item-four">
                         <GiftFinder />
+                        <Advert />
                     </div>
                     <div className="home__grid-item home__grid-item-five">
-                        <Product />
+                        <Advert />
+                    </div>
+                    <div className="home__grid-item home__grid-item-six">
+                        <Advert />
+                    </div>
+                    <div className="home__grid-item home__grid-item-seven">
+                        <Advert />
+                    </div>
+                    <div className="home__grid-item home__grid-item-eight">
+                        <Advert />
                     </div>
                 </div>
             </div>

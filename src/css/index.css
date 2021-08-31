@@ -29,6 +29,7 @@ h1 {
 a {
   color: var(--clr-link);
   cursor: pointer;
+  text-decoration: none;
 }
 
 a:hover {
