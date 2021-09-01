@@ -1,0 +1,48 @@
+.end-of-summer-deals__container {
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.end-of-summer-deals__header {
+    padding-bottom: 20px;
+}
+
+.end-of-summer-deals__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.end-of-summer-deals__image-container {
+    align-self: center;
+}
+
+.end-of-summer-deals__image {
+
+}
+
+.end-of-summer-deals__price-container {
+    margin: 15px 10px 0px 10px;
+    font-size: 21px;
+}
+
+.end-of-summer-deals__footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.end-of-summer-deals__body > span {
+    margin: 0px 10px 30px 10px;
+}
+
+.pound-sign-top {
+    position: relative;
+    top: -0.4em;
+    font-size: 14px;
+    padding-right: 2px;
+}
+
+.dash {
+    padding: 0px 8px;
+}
