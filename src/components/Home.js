@@ -10,6 +10,7 @@ import ContinueWatching from './ContinueWatching'
 import RecommendedVideo from './RecommendedVideo'
 import ProductsSmallBusinesses from './ProductsSmallBusinesses'
 import EndOfSummerDeals from './EndOfSummerDeals'
+import Carousel from './Carousel'
 
 function Home() {
     return (
@@ -62,6 +63,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Carousel/>
         </div>
     )
 }
