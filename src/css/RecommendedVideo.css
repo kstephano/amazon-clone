@@ -1,0 +1,69 @@
+.recommended-video__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 4px;
+}
+
+.recommended-video__header {
+    position: absolute;
+    top: 0px;
+    color: white;
+    margin-top: 20px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.recommended-video__header > h1 {
+    padding-bottom: 10px;
+}
+
+.recommended-video__header > p {
+    font-weight: 700;
+}
+
+.recommended-video__body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.recommended-video__background-blur {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.527) 90% ,rgba(32, 32, 32, 0.5) 30%, rgba(0, 0, 0, 0.5) 70%), url(https://www.amazon.co.uk/images/S/pv-target-images/8ceb266c2ba18c12eb65cda8b8456399a3a88d77d09eda7c7afe7c4ccd62c860._RI_V_TTW_AC_SL792_.jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    transform: scale(1.1);
+    filter: blur(10px);
+}
+
+.recommended-video__image-container {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    right: 0;
+}
+
+.recommended-video__image {
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(226, 226, 226, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.amazon.co.uk/images/S/pv-target-images/8ceb266c2ba18c12eb65cda8b8456399a3a88d77d09eda7c7afe7c4ccd62c860._RI_V_TTW_AC_SL792_.jpg);
+    background-size:cover;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.recommended-video__footer {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    color: white;
+}

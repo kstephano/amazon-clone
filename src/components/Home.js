@@ -7,6 +7,9 @@ import GiftFinder from './GiftFinder'
 import SummerSale from './SummerSale'
 import Advert from './Advert'
 import ContinueWatching from './ContinueWatching'
+import RecommendedVideo from './RecommendedVideo'
+import ProductsSmallBusinesses from './ProductsSmallBusinesses'
+import EndOfSummerDeals from './EndOfSummerDeals'
 
 function Home() {
     return (
@@ -39,19 +42,23 @@ function Home() {
                         <Advert />
                     </div>
                     <div className="home__grid-item home__grid-item-six">
-                        <Product 
+                        <RecommendedVideo />
+                        
+                    </div>
+                    <div className="home__grid-item home__grid-item-seven">
+                        <ProductsSmallBusinesses />
+                    </div>
+                    <div className="home__grid-item home__grid-item-eight">
+                        <EndOfSummerDeals />
+                    </div>
+                    <div className="home__grid-item home__grid-item-nine">
+                         <Product 
                             title='JVC Fire TV 40" Smart Full HD LEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
                             price={180.99}
                             rating={4.5}
                             image="https://m.media-amazon.com/images/I/61sSAuEPVPL._AC_SL1000_.jpg" 
                             productCount={1903}
                         />
-                    </div>
-                    <div className="home__grid-item home__grid-item-seven">
-                        <Advert />
-                    </div>
-                    <div className="home__grid-item home__grid-item-eight">
-                        <Advert />
                     </div>
                 </div>
             </div>

@@ -15,6 +15,7 @@
     position: absolute;
     cursor: pointer;
     right: -6px;
+    bottom: -20px;
 }
 
 .advert__info-container > span {
