@@ -2,7 +2,6 @@
     position: relative;
     width: 1500px;
     height: 600px;
-    margin: 0 auto;
 }
 
 .carousel__image {
@@ -14,7 +13,7 @@
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.carousel__track-container {
+.carousel__slide-container {
     position: relative;
     height: 100%;
 }
@@ -22,6 +21,7 @@
 .carousel__slide {
     position: absolute;
     top: 0;
+    left: 0;
     bottom: 0;
     width: 100%;
 }
@@ -29,23 +29,22 @@
 .carousel__button {
     position: absolute;
     background-color: transparent;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     z-index: 5;
-    border: 0;
     cursor: pointer;
+    border: none;
+
 }
 
 .carousel__button--left {
-    left: 40px;
+    left: 0px;
 }
 
 .carousel__button--right {
-    right: -40px;
+    right: 0px;
 }
 
 .carousel__button-chevron {
-    height: 250px;
-    width: 80px;
-    transform: scale(1.5);
+    height: 250px !important;
+    width: 80px !important;
 }

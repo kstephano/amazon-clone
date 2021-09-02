@@ -11,17 +11,15 @@ import RecommendedVideo from './RecommendedVideo'
 import ProductsSmallBusinesses from './ProductsSmallBusinesses'
 import EndOfSummerDeals from './EndOfSummerDeals'
 import Carousel from './Carousel'
+import ImageSlider from './Carousel'
+import { SliderData } from '../Data/SliderData'
 
 function Home() {
     return (
         <div className='home'>
             <div className="home__container">
                 <div className="home__image-container">
-                    <img 
-                        className='home__image'
-                        src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/gateway/placement/launch/TheTomorrowWar/TWAR_2021_GWBleedingHero_ENG_COVIDUPDATE_XSite_3000X1200_PV_en-GB._CB665379733_.jpg" 
-                        alt="Prime Video" 
-                    />
+                    <Carousel slides={SliderData}/>
                 </div>
                 <div className="home__grid">
                     <div className="home__grid-item home__grid-item-one">
@@ -63,7 +61,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Carousel/>
         </div>
     )
 }
