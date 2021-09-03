@@ -5,15 +5,19 @@ import ListIcon from '@material-ui/icons/List';
 
 import '../css/Header.css'
 import logo from '../Assets/amazon-logo-transparent.png'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className='header'>
             <div className="navbar-main">
-                <img className='navbar-main__logo'
-                    src={logo} 
-                    alt='Amazon Logo'
-                />
+                <Link to="/">
+                    <img className='navbar-main__logo'
+                        src={logo} 
+                        alt='Amazon Logo'
+                    />
+                </Link>
+
                 <div className='navbar-main__search'>
                     <input className='navbar-main__search-input' type='text'/>
                     <SearchIcon className='navbar-main__search-icon' />
@@ -29,10 +33,12 @@ function Header() {
                         <span className='navbar-main__option-line-two'>& Orders</span>
                     </div>
 
-                    <div className='navbar-main__option-basket'>
-                        <ShoppingBasketIcon />
-                        <span className='navbar-main__option-line-two navbar-main__basket-count'>0</span>
-                    </div>
+                    <Link to="/checkout">
+                        <div className='navbar-main__option-basket'>
+                            <ShoppingBasketIcon />
+                            <span className='navbar-main__option-line-two navbar-main__basket-count'>0</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
             
