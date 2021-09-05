@@ -7,7 +7,7 @@
 
 .checkout__grid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr min-content;
     gap: 1.5em;
     padding: 15px;
 }
@@ -24,11 +24,12 @@
 .checkout__grid-item-two {
     grid-row: 1/3;
     grid-column-end: 3;
-    width: 100%;
+    width: 300px;
+    height: 130px;
 }
 
 .checkout__grid-item-three {
-
+  
 }
 
 .checkout__advert {
@@ -73,5 +74,36 @@
 }
 
 .checkout__right-subtotal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.checkout__button {
+    position: relative;
+    background-color: var(--clr-primary-200);
+    border: 1px solid var(--clr-primary-300);
+    border-radius: 7px;
+    display: inline-block;
+    padding: 0;
+    text-decoration: none!important;
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.checkout__button:hover {
+    opacity: 0.8;
+}
+
+.checkout__proceed-to-retail-checkout {
+    background-color: transparent;
+    border: 0;
+    padding: 7px 67px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    outline: 0;
 }
