@@ -2,8 +2,10 @@ import React from 'react'
 import InfoIcon from '@material-ui/icons/Info';
 
 import '../css/Product.css'
+import { useStateValue } from '../redux/StateProvider';
 
-function Product({ title, image, price, rating, ratingCount }) {
+function Product({ id, title, image, price, rating, ratingCount }) {
+    const [basket, dispatch] = useStateValue();
 
     function getRatingBackgroundPosition() {
         switch(rating) {
@@ -33,6 +35,20 @@ function Product({ title, image, price, rating, ratingCount }) {
                 return "-278px -100px"
         }
     }
+
+    const addToBasket = () => {
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+                rating: rating,
+            }
+        })
+    }
+
     return (
         <div className="product">
             <div className="product__image-container">
@@ -59,7 +75,7 @@ function Product({ title, image, price, rating, ratingCount }) {
                             <img className="product__price-prime-logo" src="https://images-eu.ssl-images-amazon.com/images/G/02/da/creatives/prime-2x-20170531.png" alt="Prime logo" />
                         </div>
                     </div>
-                <span className="product__shop-now-btn">Shop now</span>
+                <span className="product__shop-now-btn" onClick={addToBasket}>Shop now</span>
                 </div>
             </div>
             <div className="product__info-container">

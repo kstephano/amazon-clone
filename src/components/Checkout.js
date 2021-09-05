@@ -20,8 +20,14 @@ function Checkout() {
                 </div>
                 <div className="checkout__right checkout__grid-item checkout__grid-item-two">
                     <div className="checkout__right-subtotal">
-                        <h2>Subtotal goes here</h2>
-                        <Subtotal basket={0}/>
+                        <Subtotal/>
+                        <span className="checkout__button">
+                            <input 
+                                type="submit" 
+                                className="checkout__proceed-to-retail-checkout" 
+                                value="Proceed to Checkout"
+                            />
+                        </span>
                     </div>
                 </div>
                 <div className="checkout__left checkout__grid-item checkout__grid-item-three">
