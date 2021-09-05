@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SliderData } from '../Data/SliderData'
+import { SliderData } from '../data/SliderData'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 

@@ -12,7 +12,7 @@ import ProductsSmallBusinesses from './ProductsSmallBusinesses'
 import EndOfSummerDeals from './EndOfSummerDeals'
 import Carousel from './Carousel'
 import ImageSlider from './Carousel'
-import { SliderData } from '../Data/SliderData'
+import { SliderData } from '../data/SliderData'
 
 function Home() {
     return (
@@ -52,6 +52,7 @@ function Home() {
                     </div>
                     <div className="home__grid-item home__grid-item-nine">
                          <Product 
+                            id={3029374924}
                             title='JVC Fire TV 40" Smart Full HD LEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
                             price={180.99}
                             rating={4.5}
