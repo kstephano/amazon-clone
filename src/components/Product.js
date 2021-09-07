@@ -5,7 +5,7 @@ import '../css/Product.css'
 import { useStateValue } from '../redux/StateProvider';
 
 function Product({ id, title, image, price, rating, ratingCount }) {
-    const [basket, dispatch] = useStateValue();
+    const [{ basket }, dispatch] = useStateValue();
 
     function getRatingBackgroundPosition() {
         switch(rating) {
@@ -65,7 +65,7 @@ function Product({ id, title, image, price, rating, ratingCount }) {
                 <div className="flex-container-row">
                     <div className="product__details-container flex-container-column">
                         <div className="product__ratings-container flex-container-row">
-                            <div className="product__ratings-stars-45" style={{ backgroundPosition: getRatingBackgroundPosition()}}></div>
+                            <div className="product__rating-stars" style={{ backgroundPosition: getRatingBackgroundPosition()}}></div>
                             <span className="product__ratings-count">{ratingCount}</span>
                         </div>
                         <div className="flex-container-row">
