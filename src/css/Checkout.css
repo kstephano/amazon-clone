@@ -54,7 +54,7 @@
 }
 
 .checkout__left-header {
-
+    margin-bottom: 20px;
 }
 
 .checkout__left-header-title {
@@ -67,6 +67,11 @@
 
 .checkout__left-body {
 
+}
+
+.checkout__left-footer {
+    margin-top: 10px;
+    float: right;
 }
 
 .checkout__right {
