@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import '../css/CheckoutProduct.css'
+import { useStateValue } from '../redux/StateProvider';
 
-class CheckoutProduct extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            quantity: 1
-        };
+function CheckoutProduct({ id, title, image, price, rating}) {
+    const [quantity, setQuantity] = useState(1);
+    const [{ basket }, dispatch] = useStateValue();
+
+    const removeFromBasket = () => {
+        dispatch({
+            type: "REMOVE_FROM_BASKET",
+            id: id,
+        })
     }
 
-    getRatingBackgroundPosition() {
-        switch(this.props.rating) {
+    function getRatingBackgroundPosition() {
+        switch(rating) {
             case 0:
                 return "-278px -100px"
             case 0.5:
@@ -39,34 +43,28 @@ class CheckoutProduct extends React.Component {
         }
     }
 
-    render() {
-        return (
-            <div className="checkout-product">
-                <div className="checkout-product__left">
-                    <img 
-                        src={this.props.image} 
-                        alt={this.props.title} 
-                        className="checkout-product__image" 
-                    />
-                </div>
-                <div className="checkout-product__right">
-                    <p className="checkout-product__title right-item">{this.props.title}</p>
-                    <p className="checkout-product__price right-item">
-                        <small>£</small>
-                        <strong>{this.props.price}</strong>
-                    </p>
-                    <div className="checkout-product__rating-stars right-item" style={{ backgroundPosition: this.getRatingBackgroundPosition()}}></div>
-                    <div className="checkout-product__right-bottom-options right-item">
-                        <input 
-                            type="submit" 
-                            value="Delete"
-                            className="checkout-product__options-button" 
-                        />
-                    </div>
+    return (
+        <div className="checkout-product">
+            <div className="checkout-product__left">
+                <img 
+                    src={image} 
+                    alt={title} 
+                    className="checkout-product__image" 
+                />
+            </div>
+            <div className="checkout-product__right">
+                <p className="checkout-product__title right-item">{title}</p>
+                <p className="checkout-product__price right-item">
+                    <small>£</small>
+                    <strong>{price}</strong>
+                </p>
+                <div className="checkout-product__rating-stars right-item" style={{ backgroundPosition: getRatingBackgroundPosition()}}></div>
+                <div className="checkout-product__right-bottom-options right-item">
+                    <button className="checkout-product__options-button" onClick={removeFromBasket}>Delete</button>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default CheckoutProduct

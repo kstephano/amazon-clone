@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../css/Checkout.css'
+import { getBasketQuantity, getBasketTotal } from '../redux/Reducer'
 import { useStateValue } from '../redux/StateProvider'
 import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
@@ -50,7 +51,7 @@ function Checkout() {
                         ))}
                     </div>
                     <div className="checkout__left-footer a-size-medium">
-                        <span>Subtotal (1 item): <strong>£998.63</strong></span>
+                        <span>Subtotal ({getBasketQuantity(basket)} item{getBasketQuantity(basket) === 1 ? "" : "s"}): <strong>£{getBasketTotal(basket)}</strong></span>
                     </div>
                 </div>
             </div>
