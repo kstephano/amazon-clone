@@ -1,0 +1,91 @@
+@import './constants.css';
+
+.login {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__logo {
+    object-fit: contain;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.login__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid var(--clr-neutral-400);
+    padding: 20px;
+}
+
+.login__container > h1 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__sign-in-button {
+    background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 149, 44) rgb(166, 130, 38) rgb(155, 121, 36);
+    text-decoration: none;
+    overflow: hidden;
+    color: currentColor;
+    box-shadow: rgb(255 255 255 / 60%) 0px 1px 0px inset;
+}
+
+.login__sign-in-button:hover {
+    opacity: 0.8;
+}
+
+.login__register-button { 
+    background-color: var(--clr-neutral-400);
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--clr-neutral-400);
+    text-decoration: none;
+    overflow: hidden;
+    color: currentColor;
+    box-shadow: rgb(255 255 255 / 60%) 0px 1px 0px inset;
+}
+
+.login__register-button:hover {
+    opacity: 0.8;
+}

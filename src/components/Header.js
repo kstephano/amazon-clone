@@ -26,10 +26,14 @@ function Header() {
                     <SearchIcon className='navbar-main__search-icon' />
                 </div>
                 <div className='navbar-main__nav'>
-                    <div className='navbar-main__option'>
-                        <span className='navbar-main__option-line-one'>Hello Guest</span>
-                        <span className='navbar-main__option-line-two'>Sign In</span>
-                    </div>
+                    <Link to="/login" className="navbar-main__login-link">
+                        <div className='navbar-main__option'>
+                            <span className='navbar-main__option-line-one'>Hello Guest</span>
+                            
+                                <span className='navbar-main__option-line-two'>Sign In</span>
+                        
+                        </div>
+                    </Link>
 
                     <div className='navbar-main__option'>
                         <span className='navbar-main__option-line-one'>Returns</span>
