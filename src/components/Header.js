@@ -7,9 +7,16 @@ import '../css/Header.css'
 import logo from '../assets/amazon-logo-transparent.png'
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../redux/StateProvider';
+import { auth } from '../firebase';
 
 function Header() {
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+
+    const handleAuthentication = () => {
+        if (user) {
+            auth.signOut();
+        }
+    }
 
     return (
         <div className='header'>
@@ -26,11 +33,16 @@ function Header() {
                     <SearchIcon className='navbar-main__search-icon' />
                 </div>
                 <div className='navbar-main__nav'>
-                    <Link to="/login" className="navbar-main__login-link">
-                        <div className='navbar-main__option'>
-                            <span className='navbar-main__option-line-one'>Hello Guest</span>
+                    <Link to={!user && "/login"} className="navbar-main__login-link">
+                        <div 
+                            className='navbar-main__option'
+                            onClick={handleAuthentication}
+                        >
+                            <span className='navbar-main__option-line-one'>Hello {user ? user.email : 'Guest'}</span>
                             
-                                <span className='navbar-main__option-line-two'>Sign In</span>
+                                <span className='navbar-main__option-line-two'>
+                                    {user ? 'Sign Out' : 'Sign In'}
+                                </span>
                         
                         </div>
                     </Link>
